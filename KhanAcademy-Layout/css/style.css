@@ -1,0 +1,125 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header nav * {
+  color: rgb(24, 101, 242);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  list-style: none;
+  float: left;
+}
+
+header {
+  height: 60px;
+  border-bottom: 1px solid rgb(214, 216, 218);
+}
+
+.leftNav {
+  padding-left: 330px;
+}
+
+.leftNav>ul>form {
+  padding-left: 50px;
+}
+
+.leftNav>ul>form>input[type=search] {
+  border: none;
+  padding: 5px;
+  border-radius: 6px;
+  background: rgb(240, 241, 242);
+}
+
+.centNav {
+  padding-left: 152px;
+}
+
+.centNav>ul>li img {
+  display: inline-block;
+  width: 176px;
+  height: 28px;
+}
+
+.rightNav {
+  padding: 5px 0 0 245px;
+}
+
+.rightNav>ul>li {
+  padding-right: 45px;
+}
+
+main>section {
+  width: 50%;
+  height: 610px;
+  float: left;
+}
+
+main>section>img {
+  margin: 78px 0 0 326px;
+}
+
+main h1 {
+  color: rgb(33, 36, 44);
+  font-family: 'Source Serif Pro', serif;
+  font-size: 5.3rem;
+  font-weight: 600;
+  padding: 176px 0 0 10px;
+  margin: 0;
+}
+
+main p {
+  color: rgb(33, 36, 44);
+  font-size: 1.8rem;
+  line-height: 40px;
+  padding: 22px 0 30px 10px;
+  margin: 0;
+}
+
+main button {
+  background: rgb(24, 101, 242);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.7rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
